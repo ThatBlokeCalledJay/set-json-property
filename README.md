@@ -58,7 +58,7 @@ There are a number of ways you can provide a value with which to update your pro
   
 This means you can also access an environment variable that has been set by another task, previously in your pipeline.  
 
-### A different use case example
+## My use case example.
 
 **I need a version number.**  
 I use [BugSnag](https://www.bugsnag.com/) for logging and alerting me of any errors in my app. One feature of BugSnag is, if I set a version number in my project's `appsettings.json` file (.net core app), I can associate errors with a specific app version. So, with that in mind, it would be handy if I could somehow get the current version number of my app and apply it to the BugSnag setting.  
@@ -77,6 +77,6 @@ JsonFile: `MyApp/appsettings.json`
 Property Path: `BugSnag.AppVersion`  
 Property Value: `$(MyNewVersionNumber)`
 
-It may not seem like it, but that's pretty cool.  
+And that's it.
 
 Don't panic if that use case made no sense, you can check out [getting started](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/Getting-Started) for more information.
