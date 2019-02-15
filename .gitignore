@@ -328,3 +328,12 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+# vsix pack script
+pack-vsix.ps1
+
+# Generated vsix files
+*.vsix
+
+# any test files
+*test*

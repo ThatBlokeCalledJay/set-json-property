@@ -1,0 +1,50 @@
+{
+  "id": "c4d17080-bdb7-4399-953f-26d67cd16593",
+  "name": "SetJsonProperty",
+  "friendlyName": "Set Json Property",
+  "description": "A build and release task for updating a json object's property with a specified value.",
+  "author": "ThatBlokeCalledJay",
+  "helpMarkDown": "[More Information](https://github.com/ThatBlokeCalledJay/set-json-property/wiki)",
+  "category": "Azure Pipelines",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "demands": [],
+  "version": {
+    "Major": "1",
+    "Minor": "0",
+    "Patch": "0"
+  },
+  "minimumAgentVersion": "2.117.0",
+  "instanceNameFormat": "Set Json Property",
+  "inputs": [
+    {
+      "name": "JsonFile",
+      "label": "Json File",
+      "type": "filePath",
+      "required": true,
+      "helpMarkDown": "The target json file (.json)" 
+    },
+    {
+      "name": "PropertyPath",
+      "label": "Property Path",
+      "type": "string",
+      "required": true,
+      "helpMarkDown": "The path to the property that requires updating [Help!](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/Getting-Started)" 
+    },
+    {
+      "name": "PropertyValue",
+      "label": "Property value",
+      "type": "string",
+      "required": true,
+      "helpMarkDown": "Update the specified property with this value." 
+    }
+  ],
+  "dataSourceBindings": [],
+  "execution": {
+    "PowerShell3": {
+      "target": "task.ps1"
+    }
+  }
+}

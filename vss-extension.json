@@ -1,0 +1,82 @@
+{
+  "manifestVersion": 1,
+  "id": "thatblokecalledjay-setjsonproperty",
+  "name": "Set Json Property",
+  "version": "1.0.0",
+  "publisher": "ThatBlokeCalledJay",
+  "public": false,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/ThatBlokeCalledJay/set-json-property"
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://github.com/ThatBlokeCalledJay/set-json-property/wiki/Getting-Started"
+    },
+    "repository": {
+      "uri": "https://github.com/ThatBlokeCalledJay/set-json-property"
+    },
+    "issues": {
+      "uri": "https://github.com/ThatBlokeCalledJay/set-json-property/issues"
+    }
+  },
+  "scope": [
+    "vso.build"
+  ],
+  "description": "A build and release task for updating a json object's property with a specified value.",
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "tags": [
+    "JSON",
+    "Member",
+    "Variable",
+    "Property",
+    "Set",
+    "Update",
+    "Pipeline",
+    "Azure DevOps"
+  ],
+  "content": {
+    "license": {
+      "path": "license.txt"
+    },
+    "details": {
+      "path": "readme.md"
+    }
+  },
+  "icons": {
+    "default": "icon.png"
+  },
+  "contributions": [
+    {
+      "id": "SetJsonProperty",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "SetJsonProperty"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "SetJsonProperty/task.ps1"
+    },
+    {
+      "path": "SetJsonProperty/task.json"
+    },
+    {
+      "path": "SetJsonProperty/icon.png"
+    },
+    {
+      "path": "SetJsonProperty/ps_modules/vststasksdk"
+    }
+  ]
+}
