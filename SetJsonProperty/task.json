@@ -21,14 +21,14 @@
   "inputs": [
     {
       "name": "JsonFile",
-      "label": "Json File",
+      "label": "Json file",
       "type": "filePath",
       "required": true,
       "helpMarkDown": "The target json file (.json)" 
     },
     {
       "name": "PropertyPath",
-      "label": "Property Path",
+      "label": "Property path",
       "type": "string",
       "required": true,
       "helpMarkDown": "The path to the property that requires updating [Help!](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/Getting-Started)" 
