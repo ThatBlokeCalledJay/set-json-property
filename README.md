@@ -71,6 +71,12 @@ I also have an extension published in the market place which automatically updat
 **Using the version number.**  
 So, AAV has provided me with a useful value in the means of a version number, stored in an environment variable `MyNewVersionNumber`. All I need to do now is set SetJsonProperty's Property Value field to `$(MyNewVersionNumber)` and the previously generated version number can be saved into my appsettings.json file, lovely-jubbly.  
 
+To achieve this, My SetJsonProperty task fields my look something like this:
+
+JsonFile: `MyApp/appsettings.json`  
+Property Path: `BugSnag.AppVersion`  
+Property Value: `$(MyNewVersionNumber)`
+
 It may not seem like it, but that's pretty cool.  
 
-Don't panic if that use case made no sense, you can check out the [wiki](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/Getting-Started) for more information
+Don't panic if that use case made no sense, you can check out [getting started](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/Getting-Started) for more information.
