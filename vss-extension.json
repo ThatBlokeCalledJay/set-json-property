@@ -4,7 +4,7 @@
   "name": "Set Json Property",
   "version": "1.0.0",
   "publisher": "ThatBlokeCalledJay",
-  "public": false,
+  "public": true,
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"

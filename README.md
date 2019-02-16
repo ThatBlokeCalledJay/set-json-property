@@ -54,7 +54,7 @@ In the above example, let's say you wanted to target the second instance of `Key
 
 ## Providing a new value
 
-There are a number of ways you can provide a value with which to update your property. You can simply enter a value into the "Property Value" box `MyNewValue`. You can specify an environment variable too, for example your build number `$(Build.BuildNumber)`  
+There are a number of ways you can provide a value with which to update your property. You can simply enter a value into the "Property Value" field e.g. `MyNewValue`. You can specify an environment variable too, for example your build number `$(Build.BuildNumber)`  
   
 This means you can also access an environment variable that has been set by another task, previously in your pipeline.  
 
@@ -73,9 +73,9 @@ So, AAV has provided me with a useful value in the means of a version number, st
 
 To achieve this, My SetJsonProperty task fields my look something like this:
 
-JsonFile: `MyApp/appsettings.json`  
-Property Path: `BugSnag.AppVersion`  
-Property Value: `$(MyNewVersionNumber)`
+Json File:      `MyApp/appsettings.json`  
+Property Path:  `BugSnag.AppVersion`  
+Property Value: `$(MyNewVersionNumber)`  
 
 And that's it.
 
