@@ -1,6 +1,6 @@
 ## SetJsonProperty
 
-Update a specific json object's property with a specified value. You can target nested json objects, and even objects that belong to an array. 
+Update a specific json object's property with a specified value. You can target nested json objects, and even objects that belong to an array. Available on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/publishers/ThatBlokeCalledJay)
   
 > Note: SetJsonProperty has been designed to work with Azure DevOps pipelines.
   
