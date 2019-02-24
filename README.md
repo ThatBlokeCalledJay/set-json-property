@@ -83,6 +83,19 @@ And that's it.
 
 > **More Info:** Don't panic if that use case made no sense, you can check out the [my use case wiki](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/My-Use-Case) for more information about how I achieved this.
 
+### Version number madness
+
+Check out the following scenario:
+
+1. Increment your app's current version.
+2. Apply new version number to FileVersion.
+3. Apply new version number to AssemblyVersion.
+4. Ensure .Net pack uses your new version number when generating new packages.
+5. Make sure all new bugs that are sent to Bugsnag include the new version number.
+6. Finally, notify Bugsnag of your latest release, and it's new version number.
+
+If you find yourself in this scenario, [click here](https://thatblokecalledjay.com/blog/view/justanotherday/continuous-integration-and-version-number-madness-b95d40aaf761) to find out how my Azure DevOps extensions can be made to work together to automate this entire process.
+
 ### On GitHub
 
 - [ThatBlokeCalledJay](https://github.com/ThatBlokeCalledJay)
