@@ -2,7 +2,7 @@
 
 Update a specific json object's property with a specified value. You can target nested json objects, and even objects that belong to an array. Available on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/publishers/ThatBlokeCalledJay)
   
-> Note: SetJsonProperty has been designed to work with Azure DevOps pipelines.
+> Note: SetJsonProperty has been designed to work with **Azure DevOps** pipelines.
   
 ## Set your property path
 
@@ -58,7 +58,13 @@ There are a number of ways you can provide a value with which to update your pro
   
 This means you can also access an environment variable that has been set by another task, previously in your pipeline.  
 
-> **More Info:** Check out the [getting started wiki](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/Getting-Started) for more information.
+## Need help setting up
+
+ Check out the [wiki](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/Getting-Started) for more information.
+
+## Minimum supported environments
+
+- [Minimum agent version](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops): 2.123.0
 
 ## My use case example
 
@@ -83,7 +89,7 @@ And that's it.
 
 > **More Info:** Don't panic if that use case made no sense, you can check out the [my use case wiki](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/My-Use-Case) for more information about how I achieved this.
 
-### Version number madness
+#### All the version numbers
 
 Check out the following scenario:
 
@@ -96,13 +102,13 @@ Check out the following scenario:
 
 If you find yourself in this scenario, [click here](https://thatblokecalledjay.com/blog/view/justanotherday/continuous-integration-and-version-number-madness-b95d40aaf761) to find out how my Azure DevOps extensions can be made to work together to automate this entire process.
 
-### On GitHub
+#### On GitHub
 
 - [ThatBlokeCalledJay](https://github.com/ThatBlokeCalledJay)
 - [AutoAppVersion](https://github.com/ThatBlokeCalledJay/auto-app-version)  
 - [SetJsonProperty](https://github.com/ThatBlokeCalledJay/set-json-property)  
   
-### On Azure Marketplace
+#### On Visual Studio Marketplace
 
 - [ThatBlokeCalledJay](https://marketplace.visualstudio.com/publishers/ThatBlokeCalledJay)
 - [AutoAppVersion](https://marketplace.visualstudio.com/items?itemName=ThatBlokeCalledJay.thatblokecalledjay-autoappversion)  
