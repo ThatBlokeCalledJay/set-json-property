@@ -58,6 +58,8 @@ There are a number of ways you can provide a value with which to update your pro
   
 This means you can also access an environment variable that has been set by another task, previously in your pipeline.  
 
+---
+
 ## Need help setting up
 
  Check out the [wiki](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/Getting-Started) for more information.
@@ -66,41 +68,14 @@ This means you can also access an environment variable that has been set by anot
 
 - [Minimum agent version](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops): 2.123.0
 
-## My use case example
 
-**I need a version number.**  
-I use [BugSnag](https://www.bugsnag.com/) for logging and alerting me of any errors in my app. One feature of BugSnag is, if I set a version number in my project's `appsettings.json` file (.net core app), I can associate errors with a specific app version. So, with that in mind, it would be handy if I could somehow get the current version number of my app and apply it to the BugSnag setting.  
+## Version Updates
+- 1.0.3  
+    Fixed character escaping issues when parsing Json.
 
-**Acquiring a version number.**  
-I also have an extension published in the market place which automatically updates you app's version number, [AutoAppVersion](https://marketplace.visualstudio.com/items?itemName=ThatBlokeCalledJay.thatblokecalledjay-autoappversion) or AAV for short. One of the settings for this extension enables you  to store a newly generated app version number in an environment variable of your choice.  Let's  say I specified `MyNewVersionNumber` as the environment variable. AAV would write the new value to this environment variable.
+---
 
-> **Note:** These environment variables don't need to be specified in your build definition's variables tab.
 
-**Using the version number.**  
-So, AAV has provided me with a useful value in the means of a version number, stored in an environment variable `MyNewVersionNumber`. All I need to do now is set SetJsonProperty's Property Value field to `$(MyNewVersionNumber)` and the previously generated version number can be saved into my appsettings.json file, lovely-jubbly.  
-
-To achieve this, My SetJsonProperty task fields my look something like this:
-
-Json File:      `MyApp/appsettings.json`  
-Property Path:  `BugSnag.AppVersion`  
-Property Value: `$(MyNewVersionNumber)`  
-
-And that's it.
-
-> **More Info:** Don't panic if that use case made no sense, you can check out the [my use case wiki](https://github.com/ThatBlokeCalledJay/set-json-property/wiki/My-Use-Case) for more information about how I achieved this.
-
-#### All the version numbers
-
-Check out the following scenario:
-
-1. Increment your app's current version.
-2. Apply new version number to FileVersion.
-3. Apply new version number to AssemblyVersion.
-4. Ensure .Net pack uses your new version number when generating new packages.
-5. Make sure all new bugs that are sent to Bugsnag include the new version number.
-6. Finally, notify Bugsnag of your latest release, and it's new version number.
-
-If you find yourself in this scenario, [click here](https://thatblokecalledjay.com/blog/view/justanotherday/continuous-integration-and-version-number-madness-b95d40aaf761) to find out how my Azure DevOps extensions can be made to work together to automate this entire process.
 
 #### On GitHub
 
@@ -113,3 +88,5 @@ If you find yourself in this scenario, [click here](https://thatblokecalledjay.c
 - [ThatBlokeCalledJay](https://marketplace.visualstudio.com/publishers/ThatBlokeCalledJay)
 - [AutoAppVersion](https://marketplace.visualstudio.com/items?itemName=ThatBlokeCalledJay.thatblokecalledjay-autoappversion)  
 - [SetJsonProperty](https://marketplace.visualstudio.com/items?itemName=ThatBlokeCalledJay.thatblokecalledjay-setjsonproperty)  
+
+Find more about me at [ThatBlokeCalledJay.com](https://thatblokecalledjay.com/)

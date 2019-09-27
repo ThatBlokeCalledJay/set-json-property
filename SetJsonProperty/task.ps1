@@ -50,7 +50,11 @@ catch {
 
 Write-Host "Writing updated json back to file: '$($jsonFile)'"
 
-$jsonOutput = $jsonInput  | ConvertTo-Json -Depth 50 -Compress |  ForEach-Object { [System.Text.RegularExpressions.Regex]::Unescape($_) }
+$jsonOutput = $jsonInput  | ConvertTo-Json -Depth 50 -Compress |  ForEach-Object {
+    [Regex]::Replace($_, 
+        "\\u(?<Value>[a-zA-Z0-9]{4})", {
+            param($m) ([char]([int]::Parse($m.Groups['Value'].Value,
+                [System.Globalization.NumberStyles]::HexNumber))).ToString() } )}
 
 Set-Content -Path $jsonFile -Value $jsonOutput
 
