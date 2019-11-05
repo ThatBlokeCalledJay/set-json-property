@@ -2,7 +2,7 @@
 
 Update a specific json object's property with a specified value. You can target nested json objects, and even objects that belong to an array. Available on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/publishers/ThatBlokeCalledJay)
   
-> Note: SetJsonProperty has been designed to work with **Azure DevOps** pipelines.
+> Note: SetJsonProperty has been designed to work with **Azure DevOps** pipelines running specifically on **Windows** machines.
   
 ## Set your property path
 
@@ -70,6 +70,10 @@ This means you can also access an environment variable that has been set by anot
 
 
 ## Version Updates
+- 1.0.5  
+    Update character escape regex to only chack for hex values
+- 1.0.4  
+    README Update
 - 1.0.3  
     Fixed character escaping issues when parsing Json.
 

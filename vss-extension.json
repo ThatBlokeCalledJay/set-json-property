@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "thatblokecalledjay-setjsonproperty",
   "name": "Set Json Property",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "publisher": "ThatBlokeCalledJay",
   "public": true,
   "targets": [
