@@ -71,7 +71,7 @@ This means you can also access an environment variable that has been set by anot
 
 ## Version Updates
 - 1.0.5  
-    Update character escape regex to only chack for hex values
+    Update character escape regex to only check for hex values
 - 1.0.4  
     README Update
 - 1.0.3  
